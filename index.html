@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card</title>
-    <link type="text/css" rel="stylesheet" href="./profileCard.css">
+    <link type="text/css" rel="stylesheet" href="./profileCard.css" />
     <script type="text/javascript" src="./profileCard.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="card">
-        <img src="./dara.jpg" alt="My profile picture" data-testid="profilePicture">
-        <h2 data-testid="fullName">Oluwadara Tejuosho</h2>
-        <p data-testid="jobTitle">Frontend Developer</p>
-        <p data-testid="shortBio">A frontend geospatial developer passionate about develoing engaging location-based wesbites.</p>
-        <p data-testid="currentLocation">Lagos, Nigeria</p>
-        <p class="email" data-testid="emailAddress"> <a href="mailto:daratejuosho@gmail.com">daratejuosho@gmail.com</a></p>
-        <div class="social_links" data-testid="socialLinks">
-            <a href="https://github.com/tash-odt">GitHub</a>
-            <a href="https://x.com/TH39318741">Twitter</a>
-            <a href="https://www.linkedin.com/in/oluwadara-tejuosho-b15985195?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7e%2B9%2BqtVTHScZ0jt98FQDQ%3D%3D">LinkedIn</a>
-        </div>
-        <p data-testid="currentTimeUTC" id="utcTime"></p>
-    </div>
-    
-    <script>
-        updateTime();
-        setInterval(updateTime, 1000);
-    </script>
+      <img class="profile_picture"
+        src="./dara.jpg"
+        alt="My profile picture"
+        data-testid="profilePicture"
+      />
+      <h2 data-testid="fullName">Oluwadara Tejuosho</h2>
+      <p data-testid="jobTitle">Frontend Developer</p>
 
-</body>
+      <div class="about_box">
+        <p data-testid="shortBio">
+        A frontend geospatial developer passionate about develoing engaging
+        location-based wesbites.
+      </p>
+      <p data-testid="currentLocation">Lagos, Nigeria</p>
+      <p class="email" data-testid="emailAddress">
+        <a href="mailto:daratejuosho@gmail.com">daratejuosho@gmail.com</a>
+      </div>
+      
+      </p>
+      <div class="social_links" data-testid="socialLinks">
+        <a href="https://github.com/tash-odt" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub Icon" width="24" height="24">
+          </a>
+          
+          <a href="https://x.com/TH39318741" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" alt="Twitter Icon" width="24" height="24">
+          </a>
+          
+          <a href="https://www.linkedin.com/in/oluwadara-tejuosho-b15985195" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn Icon" width="24" height="24">
+          </a>
+      </div>
+      <p data-testid="currentTimeUTC" id="utcTime"></p>
+    </div>
+
+    <script>
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
 </html>
